@@ -56,7 +56,9 @@ a {
     .sidebar .sections li {
       list-style: none;
       margin-bottom: 7px; }
-
+#container {
+		margin-top: 100px;
+}
 .content {
   margin-left: 110px;
   width: 650px;
@@ -200,3 +202,8 @@ a {
     font-weight: bold; }
   .content .talk-design .color .white {
     color: #fff; }
+
+
+#me {
+		
+}
