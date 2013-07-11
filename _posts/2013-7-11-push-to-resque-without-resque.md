@@ -20,7 +20,7 @@ We wanted to avoid Resque and OurAmaizingQueue (that lives in a common internal 
 
 The 'magic' is easy, we only need to encode a Hash into JSON with a `class` key that stores the class name of the job to be enqueued and a `args` key with the arguments for the job stored like an Array. This JSON is pushed into the tail of the list identified by the key `resque:queue:name_of_the_queue_to_use`.
 
-Another important thing we shouldn't forget is to add the queue name to use into the `resque:queues` set to make resque listening these queue.
+Another important thing we shouldn't forget is to add the queue name to use into the `resque:queues` set to make Resque listening this queue.
 
 The Airbrake initializer changes a bit cause we don't have the job class constant and we need to enqueue the job using a string.
 
