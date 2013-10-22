@@ -31,8 +31,8 @@ The matcher methods i've talked before use all of them the method
 {% include ruby/synchronize.rb %}
 {% endhighlight %}
 
-This method yields the block you pass and rescue any exception raised
-in the block. It will re-raise the exception unless some condition
+This method yields the block you pass and rescues any exception raised
+in the block. It will re-raises the exception unless some condition
 avoid it and then the block will be retried. The condition we are
 interested in is this one:
 
@@ -52,8 +52,8 @@ driver's `invalid_element_errors` or `Capybara::ElementNotFound`. The
 kind of driver you are using (Poltergeist, Selenium, Webkit) you will
 need perhaps to monkeypatch the driver.
 
-We can use `Capybara::ElementNotFound` or a class inheriting of it yo
-control the raise of the block we want to synchronize. So a way to
+We can use `Capybara::ElementNotFound` or a class inheriting of it to
+control the exception raising in the block we want to synchronize. So a way to
 wait for a expected result in Javascript could have this implementation:
 
 {% highlight ruby %}
