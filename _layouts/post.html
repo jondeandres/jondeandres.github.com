@@ -1,5 +1,6 @@
 ---
 layout: layout
+comments: true
 ---
 
 <section class="content">
@@ -16,6 +17,9 @@ layout: layout
   <!-- TODO: change links, gravatar, and bio here -->
   <section class="meta">
     <h3>Discussion, links, and tweets</h3>
+    {% if page.comments %}
+    {% include comments.html %}
+    {% endif %}
     <section class="copy">
       <a href="https://twitter.com/jondeandres">
         <img src="https://en.gravatar.com/userimage/6598214/edcd245716fb6135d0bc265c2a64203f.jpg?size=50" height="50" width="50" />
