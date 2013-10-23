@@ -9,7 +9,7 @@ selectors and content you use to find elements.
 
 The big changes with Capybara 1 can be found
 [here](http://techblog.fundinggates.com/blog/2012/08/capybara-2-0-upgrade-guide/).
-The important change i'll talk about is about the missing `wait_until`
+The important change i'll talk about is the missing `wait_until`
 method we had in Capybara 1. It doesn't exist any more in Capybara.
 
 If we need to wait for an element to appear in the DOM cause of an
