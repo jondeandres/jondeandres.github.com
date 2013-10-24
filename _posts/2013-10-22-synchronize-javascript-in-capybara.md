@@ -10,7 +10,7 @@ selectors and content you use to find elements.
 The big changes with Capybara 1 can be found
 [here](http://techblog.fundinggates.com/blog/2012/08/capybara-2-0-upgrade-guide/).
 The important change i'll talk about is the missing `wait_until`
-method we had in Capybara 1. It doesn't exist any more in Capybara.
+method we had in Capybara 1. It doesn't exist anymore in Capybara.
 
 If we need to wait for an element to appear in the DOM cause of an
 AJAX request we can use matchers like `have_css`, `have_selector` or
@@ -20,7 +20,7 @@ time by default is 2 seconds but you can change it just setting
 
 Ok, this is the way to wait for the elements to appear in the DOM, but what we'd like it's to
 wait for the result of evaluating some Javascript statement. This is a
-little more complex and it seems that Capybara doens't treat this
+little more complex and it seems that Capybara doesn't treat this
 case.
 
 We want to evaluate `$.active` and check if the return value is 0.
@@ -46,7 +46,7 @@ And `catch_error?` method is like this:
 {% include ruby/catch_error.rb %}
 {% endhighlight %}
 
-So `synchronize` doens't re-raises the exception if it's one of the
+So `synchronize` doesn't re-raises the exception if it's one of the
 driver's `invalid_element_errors` or `Capybara::ElementNotFound`. The
 `invalid_element_errors` is defined by the driver and depending on the
 kind of driver you are using (Poltergeist, Selenium, Webkit) you will
